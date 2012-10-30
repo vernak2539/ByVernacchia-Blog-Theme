@@ -5,7 +5,8 @@ This is a Wordpress theme that I created for my blog. If you want to see it in a
 This theme uses the following scripts/frameworks:
 * Wordpress (well I guess that's a given seeing as it's a Wordpress theme)
 * jQuery
-* Twitter Bootstrap (CSS Grid and JS)
+* Twitter Bootstrap (Responsive CSS Grid and JS)
+  * Customized for a this theme. Change to tablet view is a little bigger than original
 
 ## Options this theme has
 * Customizable navigation
