@@ -64,3 +64,16 @@
         </div>
       </div>
     </nav>
+    <div class="container content">
+      <div class="row-fluid">
+        <div class="span12 alert"  id="not-blog-alert">
+          <button type="button" class="close" onclick="$(this).parent().hide()">×</button>
+          <strong>Sorry!</strong> I am working working on other parts of my site. The rest of it will be done soon!
+        </div>
+      </div>
+      <div class="row-fluid">
+        <?php if(is_sidebar_active('primary_widget_area') || is_sidebar_active('secondary_widget_area')) { ?>
+        <div class="span8">
+        <?php } else { ?>
+        <div class="span12">
+        <?php } ?>
