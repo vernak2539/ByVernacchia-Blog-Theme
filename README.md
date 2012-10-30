@@ -6,7 +6,7 @@ This theme uses the following scripts/frameworks:
 * Wordpress (well I guess that's a given seeing as it's a Wordpress theme)
 * jQuery
 * Twitter Bootstrap (Responsive CSS Grid and JS)
-  * Customized for a this theme. Change to tablet view is a little bigger than original
+  * Responsive grid customized for this theme. Change to tablet view is a little bigger than original
 
 ## Options this theme has
 * Customizable navigation
