@@ -1,3 +1,11 @@
+  </div>
+      <?php if(is_sidebar_active('primary_widget_area') || is_sidebar_active('secondary_widget_area')) { ?>
+      <div class="span4 sidebar">
+        <?php get_sidebar(); ?>
+      </div>
+      <?php } ?>
+    </div>
+  </div>
   <div class="container">
     <div class="row-fluid copyright">
       <div class="span12">
