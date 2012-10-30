@@ -26,6 +26,8 @@ $(function() {
     }
   });
 
+
+  // TAKE OUT IF USING REAL NAV
   $('.nav > li > a').click(function() {
     if($(this).attr('href') === "#") {
       $('#not-blog-alert').show();
