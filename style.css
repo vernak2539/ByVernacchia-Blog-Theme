@@ -396,13 +396,24 @@ h3 {
 }
 
 
-
+/* MEDIA QUERY STUFF */
 @media (max-width: 767px) {
   .widget-area > .sidebar {
     margin-left:0;
   }
 }
 
+@media (max-width: 480px) {
+.customize-support nav.affix {
+  position: relative;
+  top:27px;
+}
+
+.navbar.affix {
+  position: relative;
+  top:-1px;
+  width:100%;
+}}
 
 
 
