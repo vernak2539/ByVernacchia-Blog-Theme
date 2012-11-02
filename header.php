@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
-    <title><?php bloginfo('name'); ?><?php if(is_single()) { ?> &raquo; Blog Archive <?php } ?><?php wp_title(); ?></title>
+    <title><?php bloginfo('name'); ?><?php if(is_single()) { ?> | the_title("", "", true); <?php } ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Alex Vernacchia">
@@ -24,7 +24,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <div class="container">
+    <div class="container hidden-phone">
       <div class="main-logo">
         <a href="<?php echo bloginfo('url'); ?>"><img src="<?php echo bloginfo('template_directory'); ?>/img/main-logo.png" height="125" alt="A Blog by Alex Vernacchia"></a>
       </div>
@@ -32,6 +32,7 @@
     <nav class="navbar">
       <div class="navbar-inner">
         <div class="container">
+          <a class="brand visible-phone" href="/">Blog By Vernacchia</a>
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
