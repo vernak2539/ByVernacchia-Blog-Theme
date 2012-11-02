@@ -1,6 +1,11 @@
 <?php
 function new_excerpt_more($more) {
-	return '...';
+global $post;
+  return '... <a href="'. get_permalink($post->ID) . '">[more]</a>';
+}
+
+function custom_excerpt_length($length) {
+  return 100;
 }
 
 function bv_widget_init() {
@@ -54,6 +59,7 @@ function bv_load_js() {
 
 register_nav_menu('primary', 'Navigation Menu');
 add_filter('excerpt_more', 'new_excerpt_more');
+add_filter('excerpt_length', 'custom_excerpt_length', 999);
 add_action('wp_enqueue_scripts','bv_load_js');
 add_action('init', 'bv_widget_init');
 
