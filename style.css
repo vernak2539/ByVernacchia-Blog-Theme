@@ -113,11 +113,15 @@ h3 {
 .post-full h2 {
   margin-top:0;
   color:#cd4128;
-  text-shadow: 1px 1px 0px #666;
+  text-shadow: 1px 1px 0px #CF7E70;
 }
 
 .post-full h3 {
   color:#08C;
+}
+
+.post-full > .entry {
+  margin-bottom:10px;
 }
 
 .post-full .postmetadata {
