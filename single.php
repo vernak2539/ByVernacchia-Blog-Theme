@@ -8,7 +8,7 @@ get_header();
       the_post();
 ?>
     <div id="post-<?php the_ID(); ?>" class="post-full">
-      <h2><?php the_title(); ?> <?php edit_post_link('Edit', '<span class="label label-info" style="padding:2px 5px;position:relative;top:-4px;>', '</span>'); ?></h2>
+      <h2><?php the_title(); ?><?php edit_post_link('Edit', '<span class="label label-info" style="padding:2px 5px;position:relative;top:-6px;left:10px">', '</span>'); ?></h2>
       
       <div class="entry">
         <?php the_content(); ?>
