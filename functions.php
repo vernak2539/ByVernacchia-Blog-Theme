@@ -62,6 +62,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 add_action('wp_enqueue_scripts','bv_load_js');
 add_action('init', 'bv_widget_init');
+add_theme_support('post-thumbnails'); 
 
 
 
