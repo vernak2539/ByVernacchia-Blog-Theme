@@ -185,13 +185,26 @@ h3 {
 }
 
 .post > h3 {
-  margin:0 0 10px;
+  margin:5px 0 10px;
   padding:0;
 }
 
 .post > h3 > a {
   margin:0;
   padding:0;
+}
+
+.post p {
+  text-align: justify;
+}
+
+.post > .entry > .post-thumbnail {
+  background:red;
+  margin-left:20px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+          box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+  border-radius: 5px;
+  
 }
 
 .post > .post-date {

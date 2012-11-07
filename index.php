@@ -13,6 +13,10 @@ get_header();
       <?php edit_post_link('Edit', '<div class="edit-link">', '</div>'); ?>
       <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
       <div class="entry">
+        <?php 
+        if(has_post_thumbnail($post->ID))
+          the_post_thumbnail('thumbnail', array('align' => 'right', 'class' => 'post-thumbnail'));
+        ?>
         <?php the_excerpt(); ?>
         <div class="postmetadata">
           <div><?php _e('Posted In: '); ?><?php the_category(', ') ?></div>
