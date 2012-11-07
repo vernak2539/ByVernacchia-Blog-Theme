@@ -56,7 +56,7 @@
               <li class="social-links hidden-phone">
                 <a href="http://twitter.com/vernacchia" rel="tooltip" title="@vernacchia" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/sm-twitter.png"></a>
                 <a href="http://www.linkedin.com/in/alexvernacchia" rel="tooltip" title="LinkedIn" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/sm-linkedin.png"></a>
-                <a href="http://github.com/vernak2539" rel="tooltip" title="vernak2539 @ Github" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/sm-github.png"></a>
+                <a href="http://github.com/vernak2539" rel="tooltip" title="Github Repos" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/sm-github.png"></a>
                 <a href="http://vizualize.me/HInDtrv78i?r=HInDtrv78i" rel="tooltip" title="Vizualize.me" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/sm-vizualize.png"></a>
                 <a href="http://www.pandora.com/profile/alvernacchia" rel="tooltip" title="Pandora" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/img/sm-pandora.png"></a>
               </li>
