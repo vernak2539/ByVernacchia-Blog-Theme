@@ -11,6 +11,7 @@ This theme uses the following scripts/frameworks:
 ## Options this theme has
 * Customizable navigation
 * Widgetized Sidebar
+* Featured Image support
 * Most Current jQuery utilizing Wordpress loading (1.8.2)
 * All JS loaded via Wordpress and not just inserted into footer
 
