@@ -15,7 +15,7 @@ get_header();
       <div class="entry">
         <?php 
         if(has_post_thumbnail($post->ID))
-          the_post_thumbnail('thumbnail', array('align' => 'right', 'class' => 'post-thumbnail'));
+          the_post_thumbnail('thumbnail', array('align' => 'right', 'class' => 'post-thumbnail', 'height' => '150'));
         ?>
         <?php the_excerpt(); ?>
         <div class="postmetadata">
