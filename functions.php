@@ -5,7 +5,7 @@ global $post;
 }
 
 function custom_excerpt_length($length) {
-  return 100;
+  return 85;
 }
 
 function bv_widget_init() {
