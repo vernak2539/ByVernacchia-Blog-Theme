@@ -201,6 +201,7 @@ h3 {
 .post > .entry > .post-thumbnail {
   background:red;
   margin-left:20px;
+  margin-bottom:10px;
   -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
           box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
   border-radius: 5px;
@@ -433,16 +434,20 @@ h3 {
 }
 
 @media (max-width: 480px) {
-.customize-support nav.affix {
-  position: relative;
-  top:27px;
-}
+  .customize-support nav.affix {
+    position: relative;
+    top:27px;
+  }
 
-.navbar.affix {
-  position: relative;
-  top:-1px;
-  width:100%;
-}}
+  .navbar.affix {
+    position: relative;
+    top:-1px;
+    width:100%;
+  }
+  .content-fixed-padding {
+    padding-top:0px;
+  }
+}
 
 
 
