@@ -43,7 +43,7 @@ function is_sidebar_active($index) {
 function bv_load_js() {
   if(!is_admin()) {
     wp_deregister_script('jquery'); 
-    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', array(), '1.8.2', true);  
+    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', array(), '1.8.2', false);  
     wp_enqueue_script('jquery'); 
 
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), '2.1.1', true );
