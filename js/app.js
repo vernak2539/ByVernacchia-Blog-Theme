@@ -26,6 +26,30 @@ $(function() {
     }
   });
 
+  // popovers 
+  $('a[rel=popover]').popover({
+    delay: { 
+      show: 100, 
+      hide: 0 
+    },
+    trigger: 'hover',
+    placement: function() {
+      if($(window).scrollTop() > 145) {
+        return "bottom";
+      } else {
+        return "top";
+      }
+    },
+    animation: true,
+    html: true
+  });
+
+  // making links unclickable
+  $('.unclickable').css({'cursor': 'default'});
+  $('.unclickable').click(function(e) {
+    e.preventDefault();
+    return false;
+  });
 
   // TAKE OUT IF USING REAL NAV
   $('.nav > li > a').click(function() {

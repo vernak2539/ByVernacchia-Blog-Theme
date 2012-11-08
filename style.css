@@ -145,6 +145,53 @@ h3 {
   box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
 }
 
+.single-nav > .sidebar {
+  margin:0 0 15px 15px;
+  border:1px solid #ccc;
+  border:1px solid rgba(0, 0, 0, .1);
+  border-radius: 10px;
+  padding:0;
+  background:#fff;
+}
+
+.single-nav > .sidebar > div {
+  width:50%;
+  display: inline-block;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box; /* Firefox, other Gecko */
+          box-sizing: border-box; /* Opera/IE 8+ */
+  padding:20px 5px;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+}
+
+.single-nav > .sidebar > div:first-child {
+  border-right:1px solid #ccc;
+  border-right:1px solid rgba(0, 0, 0, .1);
+}
+
+.single-nav > .sidebar > div > a {
+  display: block;
+  opacity: .6;
+  -webkit-transition:all .2s ease; 
+     -moz-transition:all .2s ease; 
+       -o-transition:all .2s ease; 
+          transition:all .2s ease; 
+}
+
+.single-nav > .sidebar > div > a:hover {
+  opacity: .8;
+}
+
+/* PAGE.PHP */
+.wp-page-header h3 {
+  display:inline-block;
+  color:#08C;
+  zoom: 1;
+  *display: inline;
+}
+
 /* POST CSS INDEX.PHP */
 .post {
   position: relative;
