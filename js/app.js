@@ -1,5 +1,8 @@
 $(function() {
 
+  // initializing pretty print for entire site
+  window.prettyPrint && prettyPrint(); 
+
   // defining variables for later use since they will be hoisted anyway because they aren't inside a function
   var topOffset = 145,
         $window = $(window),
@@ -34,7 +37,7 @@ $(function() {
     },
     trigger: 'hover',
     placement: function() {
-      if($(window).scrollTop() > 145) {
+      if($(window).scrollTop() > 120) {
         return "bottom";
       } else {
         return "top";
