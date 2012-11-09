@@ -475,8 +475,11 @@ h3 {
 
 /* MEDIA QUERY STUFF */
 @media (max-width: 767px) {
-  .widget-area > .sidebar {
+  .widget-area > .sidebar, .single-nav > .sidebar {
     margin-left:0;
+  }
+  .single-nav > .sidebar {
+    margin-top:10px;
   }
 }
 
