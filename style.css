@@ -109,15 +109,31 @@ h3 {
   color:#aaa;
 }
 
+/* EDIT BUTTON FOR SINGLE.PHP and PAGE.PHP */
+.edit-content-btn {
+  padding:2px 5px;
+  position:relative;
+  top:-6px;
+  left:10px;
+}
+
+
 /* SINGLE.PHP */
 .post-full h2 {
-  margin-top:0;
+  margin:0 0;
   color:#cd4128;
   text-shadow: 1px 1px 0px #CF7E70;
 }
 
 .post-full h3 {
   color:#08C;
+}
+
+.post-full > .post-meta {
+  margin-bottom:10px;
+  font-size:.9em;
+  color:#aaa;
+  font-style: italic;
 }
 
 .post-full > .entry {
@@ -450,6 +466,144 @@ h3 {
 
 .widget-area > .sidebar > [id^="twitter"] > .tweets > li > a {
   color:#cd4128;
+}
+
+/* COMMENT FORMATTING */
+.comments-area > .comments-title {
+  font-size:1.5em;
+  color:#cd4128;
+  margin-bottom:10px;
+}
+
+.comments-area > .commentlist {
+  list-style: none !important;
+  margin-left:0;
+}
+
+.comments-area > .commentlist > li {
+  margin-bottom:15px;
+  padding-bottom: 15px;
+}
+
+.comments-area > .commentlist ul, .comments-area > .commentlist ol {
+  list-style:none !important;
+} 
+
+.comments-area > .commentlist .comment {
+  margin-bottom:15px;
+}
+
+.comments-area > .commentlist .comment .comment:last-child {
+  border-bottom: none;
+}
+
+.comments-area > .commentlist .comment:last-child {
+  margin-bottom:0;
+  padding-bottom: 0;
+}
+
+.comments-area > .commentlist .comment-info-container > .reply {
+  border-bottom:1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.comments-area > .commentlist .comment > .comment-info-container > footer {
+  line-height: 1.2em;
+  color:#666;
+}
+.comments-area > .commentlist .comment > .comment-info-container > footer > .comment-meta {
+  margin-bottom: 10px;
+}
+
+.comments-area > .commentlist .comment > .comment-info-container > footer > .comment-meta > a {
+  font-size:.8em;
+  font-style:italic;
+  color:#CD4128;
+}
+.comments-area > .commentlist .comment > .comment-info-container > .comment-content {
+
+}
+
+
+/* COMMENT RESPOND FORMATTING */
+.comments-area > #respond > #reply-title {
+  font-size:1.2em;
+  color:#08C;
+}
+
+.comments-area input[type=text], .comments-area textarea {
+  width:100%;
+  max-width: 100%;
+  padding:10px;
+}
+
+.comments-area textarea {
+  height:100px;
+}
+
+.comments-area label {
+  color:#666;
+  display:inline-block;
+  position: relative;
+  top:2px;
+  zoom:1;
+  *display: inline;
+}
+
+.comments-area .form-allowed-tags {
+  color:#666;
+  font-size:.9em;
+}
+
+.comments-area .form-submit input[type=submit] {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  *line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.comments-area ::-webkit-input-placeholder {
+    color:    #999;
+    font-style: italic;
+}
+.comments-area :-moz-placeholder {
+    color:    #999;
+    font-style: italic;
+}
+.comments-area :-ms-input-placeholder {
+    color:    #999;
+    font-style: italic;
 }
 
 /* MEDIA EMBED STUFF */
