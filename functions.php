@@ -1,4 +1,7 @@
 <?php
+
+require( dirname( __FILE__ ) . '/inc/template-tags.php' );
+
 function new_excerpt_more($more) {
 global $post;
   return '... <a href="'. get_permalink($post->ID) . '">[more]</a>';
