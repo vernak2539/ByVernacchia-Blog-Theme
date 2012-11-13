@@ -18,6 +18,19 @@
   </div>
   <?php edit_post_link('Edit', '<div class="edit-link hidden-phone">', '</div>'); ?>
   <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+  <div class="post-meta visible-phone">
+    <?php
+    printf( __( 'Posted on <a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>'),
+        esc_url( get_permalink() ),
+        esc_attr( get_the_time() ),
+        esc_attr( get_the_date( 'c' ) ),
+        esc_html( get_the_date() ),
+        esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+        esc_attr( sprintf( __( 'View all posts by %s' ), get_the_author() ) ),
+        esc_html( get_the_author() )
+    );
+    ?>
+  </div>
   <div class="entry">
     <?php 
     if(has_post_thumbnail($post->ID))
