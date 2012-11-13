@@ -65,7 +65,18 @@ add_filter('excerpt_more', 'new_excerpt_more');
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 add_action('wp_enqueue_scripts','bv_load_js');
 add_action('init', 'bv_widget_init');
+add_theme_support('custom-background');
 add_theme_support('post-thumbnails'); 
+add_theme_support( 'custom-header', array(
+  'default-image'          => get_template_directory_uri() . '/img/main-logo.png',
+  'random-default'         => false,
+  'width'                  => 204,
+  'height'                 => 125,
+  'flex-height'            => true,
+  'flex-width'             => true,
+  'header-text'            => false,
+  'uploads'                => true
+));
 
 
 
