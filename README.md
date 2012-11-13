@@ -9,9 +9,10 @@ This theme uses the following scripts/frameworks:
 * jQuery
 
 ## Options this theme has:
-1. Customizable navigation
+1. Customizable navigation menu (right below logo)
 2. Customizable background
-3. Customizable Header (Logo)
+3. Customizable header (Logo)
+  * must have php5-gd library installed on server for this to work
 4. Widgetized Sidebar
 5. Featured Image support
 6. Most Current jQuery utilizing Wordpress loading (1.8.2)
