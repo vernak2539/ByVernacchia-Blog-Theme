@@ -14,7 +14,8 @@ This theme uses the following scripts/frameworks:
 3. Customizable header (Logo)
   * must have php5-gd library installed on server for this to work
 4. Widgetized Sidebar
-5. Featured Image support
+5. Post featured image support
+  * only shows on main page of blog. Will incorporate into single posts eventually
 6. Most Current jQuery utilizing Wordpress loading (1.8.2)
 7. All JS loaded via Wordpress and not just inserted into footer
 
