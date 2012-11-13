@@ -9,12 +9,12 @@ This theme uses the following scripts/frameworks:
 * jQuery
 
 ## Options this theme has:
-- Customizable navigation
-- Customizable background
-- Customizable Header (Logo)
-- Widgetized Sidebar
-- Featured Image support
-- Most Current jQuery utilizing Wordpress loading (1.8.2)
-- All JS loaded via Wordpress and not just inserted into footer
+1. Customizable navigation
+2. Customizable background
+3. Customizable Header (Logo)
+4. Widgetized Sidebar
+5. Featured Image support
+6. Most Current jQuery utilizing Wordpress loading (1.8.2)
+7. All JS loaded via Wordpress and not just inserted into footer
 
 I guess that is all for right now. I haven't totally finished it, but will be making changes as I have more time to do so.
