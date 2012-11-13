@@ -15,6 +15,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  
 */
 
+/* THEME STYLES */
+
 body {
   padding-bottom:20px;
 }
@@ -109,152 +111,54 @@ h3 {
   color:#aaa;
 }
 
-/* EDIT BUTTON FOR SINGLE.PHP and PAGE.PHP */
-.edit-content-btn {
-  padding:2px 5px;
-  position:relative;
-  top:-6px;
-  left:10px;
-}
-
-
-/* SINGLE.PHP */
-.post-full h2 {
-  margin:0 0;
-  color:#cd4128;
-  text-shadow: 1px 1px 0px #CF7E70;
-}
-
-.post-full h3 {
-  color:#08C;
-}
-
-.post-full > .post-meta {
-  margin-bottom:10px;
-  font-size:.9em;
-  color:#aaa;
-  font-style: italic;
-}
-
-.post-full > .entry {
-  margin-bottom:10px;
-}
-
-.post-full .postmetadata {
-  font-size:.8em;
-  color:#999;
-}
-
-.post-full .postmetadata a {
-  color:#cd4128;
-}
-
-.post-full img {
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
-  -webkit-transition:all .2s ease; 
-     -moz-transition:all .2s ease; 
-       -o-transition:all .2s ease; 
-          transition:all .2s ease; 
-}
-
-.post-full img:hover {
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
-}
-
-.single-nav > .sidebar {
-  margin:0 0 15px 15px;
-  border:1px solid #ccc;
-  border:1px solid rgba(0, 0, 0, .1);
-  border-radius: 10px;
-  padding:0;
-  background:#fff;
-}
-
-.single-nav > .sidebar > div {
-  width:50%;
-  display: inline-block;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-     -moz-box-sizing: border-box; /* Firefox, other Gecko */
-          box-sizing: border-box; /* Opera/IE 8+ */
-  padding:20px 5px;
-  text-align: center;
-  zoom: 1;
-  *display: inline;
-}
-
-.single-nav > .sidebar > div:first-child {
-  border-right:1px solid #ccc;
-  border-right:1px solid rgba(0, 0, 0, .1);
-}
-
-.single-nav > .sidebar > div > a {
-  display: block;
-  opacity: .6;
-  -webkit-transition:all .2s ease; 
-     -moz-transition:all .2s ease; 
-       -o-transition:all .2s ease; 
-          transition:all .2s ease; 
-}
-
-.single-nav > .sidebar > div > a:hover {
-  opacity: .8;
-}
-
-/* PAGE.PHP */
-.wp-page-header h3 {
-  display:inline-block;
-  color:#08C;
-  zoom: 1;
-  *display: inline;
-}
-
 /* POST CSS INDEX.PHP */
 .post {
   position: relative;
-  padding:10px 20px 10px;
+  padding:20px 20px 30px;
   border-radius: 5px;
-  border: 1px solid #EEE;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #ddd;
-  margin:10px 0 25px;
-  box-shadow: inset 10px 10px 40px -11px rgba(127, 127, 127, 0.08);
+  border-bottom:1px solid #efefef;
 }
 
-.post:hover > .edit-link > a {
-  display: block;
-}
+
 
 .post > .edit-link > a {
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-border-radius: 5px 0px 5px 0px;
-          border-radius: 5px 0px 5px 0px;
-  border-right: 1px solid #ddd;
-  border-bottom:1px solid #ddd;
+  top: 25px;
+  left: -35px;
+  -webkit-border-radius: 5px 0 0 5px;
+          border-radius: 5px 0 0 5px;
+  border:1px solid #ddd;
+  border-right: none;
   padding: 5px 10px;
   background:#fff;
   -webkit-transition:all .2s ease; 
      -moz-transition:all .2s ease; 
        -o-transition:all .2s ease; 
           transition:all .2s ease; 
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
-
+  box-shadow: -2px 0 5px 0 rgba(0,0,0,.1);
 }
+
+.post:hover > .edit-link > a {
+  display: block;
+}
+
 .post > .edit-link > a:hover {
-  color:#fff;
-  background:#CD4128;
+  color:#CD4128;
 }
 
 .post > h3 {
-  margin:5px 0 10px;
+  margin:5px 0;
   padding:0;
 }
 
 .post > h3 > a {
   margin:0;
   padding:0;
+}
+
+.post:hover > h3 > a {
+  color:#015E8D;
 }
 
 .post p {
@@ -273,14 +177,42 @@ h3 {
 
 .post > .post-date {
   position: absolute;
-  top:-13px;
-  right:10px;
-  padding:3px 7px;
-  border:1px solid #ddd;
-  border-radius:5px;
-  background: #fff;
+  top:25px;
+  left:-70px;
   color:#999;
+  text-align: center;
+}
+
+.post > .post-date > .post-date-circle {
   box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
+  width:75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #CD4128;
+  background: rgba(205, 65, 40, .8);
+  padding:0;
+  color:#fff;
+  display: block;
+  -webkit-transition:background .2s ease; 
+     -moz-transition:background .2s ease; 
+       -o-transition:background .2s ease; 
+          transition:background .2s ease; 
+}
+
+.post:hover > .post-date > .post-date-circle {
+  background: rgba(205, 65, 40, 1);
+}
+
+.post > .post-date > .post-date-circle > .day {
+  font-weight: bold;
+  font-size: 2.5em;
+  padding:20px 0 5px;
+  display: block;
+}
+
+.post > .post-date > .post-date-circle > .month {
+  display: block;
+  padding:0;
 }
 
 .post > .entry > .postmetadata {
@@ -302,8 +234,8 @@ h3 {
 
 .post > .entry > .postmetadata > .post-comments {
   position: absolute;
-  bottom:5px;
-  right:5px;
+  bottom:28px;
+  right:15px;
 }
 
 .post > .entry > .postmetadata > .post-comments a {
@@ -319,6 +251,30 @@ h3 {
   height: 32px;
 }
 
+
+/*first and last child posts css */
+.post:first-child {
+  padding-top:0;
+}
+
+.post:first-child > h3 {
+  margin-top:0;
+}
+
+.post:first-child > .edit-link > a {
+  top:0;
+
+}
+.post:first-child > .post-date {
+  top:0;
+}
+.post:last-child {
+  border-bottom: none;
+}
+
+
+
+/*INDEX PAGINATION */
 .page-navigation {
   text-align: center;
 }
@@ -343,6 +299,7 @@ h3 {
   color:#999;
 }
 
+/* FOOTER STYLES */
 .copyright {
   font-size:.8em;
   color:#aaa;
@@ -356,24 +313,6 @@ h3 {
 
 #not-blog-alert {
   display: none;
-}
-
-
-/* SOCIAL MEDIA LINKS */
-.nav > li.social-links > a {
-  display: inline-block;
-  padding: 10px 3px;
-  opacity: .5;
-  -webkit-transition:all .2s ease; 
-     -moz-transition:all .2s ease; 
-       -o-transition:all .2s ease; 
-          transition:all .2s ease; 
-  zoom: 1;
-  *display: inline;
-}
-
-.nav > li.social-links > a:hover {
-  opacity: 1;
 }
 
 /* SIDEBAR STYLES */
@@ -466,6 +405,104 @@ h3 {
 
 .widget-area > .sidebar > [id^="twitter"] > .tweets > li > a {
   color:#cd4128;
+}
+
+/* SINGLE.PHP */
+.post-full h2 {
+  margin:0 0;
+  color:#cd4128;
+  text-shadow: 1px 1px 0px #CF7E70;
+}
+
+.post-full h3 {
+  color:#08C;
+}
+
+.post-full > .post-meta {
+  margin-bottom:10px;
+  font-size:.9em;
+  color:#aaa;
+  font-style: italic;
+}
+
+.post-full > .entry {
+  margin-bottom:10px;
+}
+
+.post-full .postmetadata {
+  font-size:.8em;
+  color:#999;
+}
+
+.post-full .postmetadata a {
+  color:#cd4128;
+}
+
+.post-full img {
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+  -webkit-transition:all .2s ease; 
+     -moz-transition:all .2s ease; 
+       -o-transition:all .2s ease; 
+          transition:all .2s ease; 
+}
+
+.post-full img:hover {
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+}
+
+.single-nav > .sidebar {
+  margin:0 0 15px;
+  border:1px solid #ccc;
+  border:1px solid rgba(0, 0, 0, .1);
+  border-radius: 10px;
+  padding:0;
+  background:#fff;
+}
+
+.single-nav > .sidebar > div {
+  width:50%;
+  display: inline-block;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box; /* Firefox, other Gecko */
+          box-sizing: border-box; /* Opera/IE 8+ */
+  padding:20px 5px;
+  text-align: center;
+  zoom: 1;
+  *display: inline;
+}
+
+.single-nav > .sidebar > div:first-child {
+  border-right:1px solid #ccc;
+  border-right:1px solid rgba(0, 0, 0, .1);
+}
+
+.single-nav > .sidebar > div > a {
+  display: block;
+  opacity: .6;
+  -webkit-transition:all .2s ease; 
+     -moz-transition:all .2s ease; 
+       -o-transition:all .2s ease; 
+          transition:all .2s ease; 
+}
+
+.single-nav > .sidebar > div > a:hover {
+  opacity: .8;
+}
+
+/* PAGE.PHP */
+.wp-page-header h3 {
+  display:inline-block;
+  color:#08C;
+  zoom: 1;
+  *display: inline;
+}
+
+/* EDIT BUTTON FOR SINGLE.PHP and PAGE.PHP */
+.edit-content-btn {
+  padding:2px 5px;
+  position:relative;
+  top:-6px;
+  left:10px;
 }
 
 /* COMMENT FORMATTING */
@@ -606,6 +643,25 @@ h3 {
     font-style: italic;
 }
 
+
+/* SOCIAL MEDIA LINKS */
+.nav > li.social-links > a {
+  display: inline-block;
+  padding: 10px 3px;
+  opacity: .5;
+  -webkit-transition:all .2s ease; 
+     -moz-transition:all .2s ease; 
+       -o-transition:all .2s ease; 
+          transition:all .2s ease; 
+  zoom: 1;
+  *display: inline;
+}
+
+.nav > li.social-links > a:hover {
+  opacity: 1;
+}
+
+
 /* MEDIA EMBED STUFF */
 .video-container {
   position: relative;
@@ -653,6 +709,23 @@ h3 {
   }
 }
 
+/* WOODOJO Twitter Profile Custom */
+.widget_woodojo_twitterprofile > .profile-info {
+  margin:10px 0 10px 20px;
+}
+
+.widget_woodojo_twitterprofile > .profile-info > .location {
+  font-size: .9em;
+  color:#CD4128;
+}
+
+.widget_woodojo_twitterprofile > .name {
+  margin-left:20px;
+}
+
+.widget_woodojo_twitterprofile > img {
+  margin:8px 20px 0 0 !important;
+}
 
 
 

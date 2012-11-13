@@ -3,10 +3,20 @@
 // used in loop
 ?>
 <div id="post-<?php the_ID(); ?>" class="post">
-  <div class="post-date">
-    <span><?php the_date('m.d.Y'); ?></span>
+  <div class="post-date hidden-phone">
+    <div class="post-date-circle">
+      <div class="day">
+        <?php echo get_the_date('j'); ?>
+      </div>
+      <div class="month">
+        <?php echo get_the_date('M'); ?>
+      </div>
+    </div>
+    <div class="year">
+      <?php echo get_the_date('Y'); ?>
+    </div>
   </div>
-  <?php edit_post_link('Edit', '<div class="edit-link">', '</div>'); ?>
+  <?php edit_post_link('Edit', '<div class="edit-link hidden-phone">', '</div>'); ?>
   <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
   <div class="entry">
     <?php 
