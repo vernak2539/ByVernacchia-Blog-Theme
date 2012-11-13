@@ -1,6 +1,6 @@
 <form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>" class="form-search visible-desktop">
   <div class="input-append">
-    <input type="text" class="span10 search-query" name="s" id="s" placeholder="<?php if(isset($_GET['s'])) echo $_GET['s']; ?>">
+    <input type="text" class="span11 search-query" name="s" id="s" placeholder="<?php if(isset($_GET['s'])) echo $_GET['s']; ?>">
     <button type="submit" class="btn">Search</button>
   </div>
 </form>

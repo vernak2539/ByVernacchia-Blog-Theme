@@ -100,7 +100,7 @@ h3 {
 
 /* SEARCH STUFF */
 .search-label {
-  margin:0 0 20px 10px;
+  margin:0 0 0 20px;
   color:#777;
 }
 
@@ -404,7 +404,7 @@ h3 {
 
 .widget-area > .sidebar { 
   list-style: none;
-  margin-left:15px;
+  margin-left:0 !important;
 }
 .widget-area > .sidebar > .categories {
   background: #fff;
