@@ -27,6 +27,7 @@
     <div class="container hidden-phone">
       <div class="main-logo">
         <a href="<?php echo bloginfo('url'); ?>"><img src="<?php echo bloginfo('template_directory'); ?>/img/main-logo.png" height="125" alt="A Blog by Alex Vernacchia"></a>
+        <a href="<?php echo bloginfo('url'); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="A Blog by Alex Vernacchia"></a>
       </div>
     </div>
     <nav class="navbar">
