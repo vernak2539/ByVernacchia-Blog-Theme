@@ -124,19 +124,19 @@ h3 {
 .post > .edit-link > a {
   display: none;
   position: absolute;
-  top: 25px;
-  left: -35px;
-  -webkit-border-radius: 5px 0 0 5px;
-          border-radius: 5px 0 0 5px;
+  top: -5px;
+  left: 20px;
+  -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
   border:1px solid #ddd;
-  border-right: none;
+  border-bottom: none;
   padding: 5px 10px;
   background:#fff;
   -webkit-transition:all .2s ease; 
      -moz-transition:all .2s ease; 
        -o-transition:all .2s ease; 
           transition:all .2s ease; 
-  box-shadow: -2px 0 5px 0 rgba(0,0,0,.1);
+  box-shadow: 0 -2px 5px 0 rgba(0,0,0,.1);
 }
 
 .post:hover > .edit-link > a {
@@ -262,7 +262,7 @@ h3 {
 }
 
 .post:first-child > .edit-link > a {
-  top:0;
+  top:-30px;
 
 }
 .post:first-child > .post-date {
