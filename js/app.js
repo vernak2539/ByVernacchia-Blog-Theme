@@ -4,7 +4,7 @@ $(function() {
   window.prettyPrint && prettyPrint(); 
 
   // defining variables for later use since they will be hoisted anyway because they aren't inside a function
-  var topOffset = 145,
+  var topOffset = parseInt($('.main-logo').css('marginTop')) + parseInt($('.main-logo').css('marginBottom')) + parseInt($('.main-logo img').attr('height')),
         $window = $(window),
       $stickyEl = $('.navbar');
 
