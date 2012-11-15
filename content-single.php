@@ -2,7 +2,7 @@
 // Display single post
 // used in loop, well not really loop
 ?>
-<article id="post-<?php the_ID(); ?>" class="post-full">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div class="post-date visible-desktop">
     <div class="post-date-circle">
       <div class="day">

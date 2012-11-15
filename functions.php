@@ -60,9 +60,17 @@ function bv_load_js() {
   }
 }
 
+function bv_post_class($classes) {
+  if(is_single()) {
+    $classes[] = sanitize_html_class('post-full');
+  }
+  return $classes;
+}
+
 register_nav_menu('primary', 'Navigation Menu');
 add_filter('excerpt_more', 'new_excerpt_more');
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
+add_filter('post_class', 'bv_post_class');
 add_action('wp_enqueue_scripts','bv_load_js');
 add_action('init', 'bv_widget_init');
 add_theme_support('custom-background');

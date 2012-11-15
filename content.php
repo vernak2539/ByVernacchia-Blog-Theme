@@ -2,7 +2,7 @@
 // Displays single posts on index page. 
 // used in loop
 ?>
-<div id="post-<?php the_ID(); ?>" class="post">
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div class="post-date hidden-phone">
     <div class="post-date-circle">
       <div class="day">
