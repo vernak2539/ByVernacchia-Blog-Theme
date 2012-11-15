@@ -1,6 +1,7 @@
 /*   
 Theme Name: By Vernacchia
 Theme URI: http://blog.byvernacchia.com
+Download URI: https://github.com/vernak2539/ByVernacchia-Blog-Theme
 Description: Custom Design for ByVernacchia.com
 Author: Alex Vernacchia
 Author URI: http://www.byvernacchia.com/
@@ -38,6 +39,11 @@ a:hover {
 
 p {
   word-wrap:break-word;
+  line-height: 1.6em;
+}
+
+ul > li, ol > li {
+  line-height: 1.8em;
 }
 
 h3 {
@@ -331,7 +337,7 @@ h3 {
   margin-bottom:20px;
 }
 
-#secondary-sidebar h3 {
+#secondary-sidebar h3, .single-nav h3 {
   text-align: center;
   font-size: 1.2em;
   margin-top:0;
@@ -418,6 +424,12 @@ h3 {
   position: relative;
 }
 
+.post-full:first-child {
+  border:none !important;
+  padding-bottom:0;
+  padding-right:5px;
+}
+
 .post-full h2 {
   margin:0 0;
   color:#cd4128;
@@ -435,14 +447,15 @@ h3 {
   font-style: italic;
 }
 
-.post-full > .post-date {
-  top:0;
-  left:-90px;
-}
 
 .post-full > .post-date > .post-date-circle {
   background: #CD4128;
-  background: rgba(205, 65, 40, 1);
+  background: rgba(205, 65, 40, .9);
+}
+
+.post-full:hover > .post-date > .post-date-circle {
+  background: #CD4128;
+  background: rgba(205, 65, 40, .9);
 }
 
 .post-full > .entry {
