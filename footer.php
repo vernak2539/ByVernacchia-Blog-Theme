@@ -1,6 +1,7 @@
   </div>
       <?php if(is_single()) { ?>
       <div class="span4 sidebar single-nav">
+        <h3 class="hidden-desktop">Post Navigation</h3>
         <div class="sidebar">
           <div class="single-prev">
             <?php 
