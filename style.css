@@ -39,7 +39,7 @@ a:hover {
 
 p {
   word-wrap:break-word;
-  line-height: 1.6em;
+  line-height: 1.7em;
 }
 
 ul > li, ol > li {
@@ -430,7 +430,7 @@ h3 {
 }
 
 .post-full h2 {
-  margin:0 0;
+  margin:0 0 10px;
   color:#cd4128;
   text-shadow: 1px 1px 0px #CF7E70;
 }
@@ -746,7 +746,8 @@ h3 {
 
 /* WOODOJO Twitter Profile Custom */
 .widget_woodojo_twitterprofile > .profile-info {
-  margin:10px 0 10px 20px;
+  margin:10px 20px;
+  text-align: justify;
 }
 
 .widget_woodojo_twitterprofile > .profile-info > .location {
