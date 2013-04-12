@@ -9,9 +9,7 @@
 
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap-responsive.css" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/prettify.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
     <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rdf_url'); ?>" />
     <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss_url'); ?>" />
