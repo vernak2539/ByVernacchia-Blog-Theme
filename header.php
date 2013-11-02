@@ -22,7 +22,7 @@
     <?php wp_head(); ?>
     <script type="text/javascript">
       var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-35367457-2']);
+      _gaq.push(['_setAccount', 'UA-XXXX-X']);
       _gaq.push(['_trackPageview']);
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
